@@ -1,11 +1,11 @@
 import React from 'react'
-import Home from './Home'
+import CookieStandAdmin from './components/CookieStandAdmin'
 import 'tailwindcss/tailwind.css'
 
 function index() {
     return (
         <div>
-            <Home/>
+             <CookieStandAdmin/>
         </div>
     )
 }
