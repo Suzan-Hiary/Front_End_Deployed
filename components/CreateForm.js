@@ -1,7 +1,9 @@
 
-import React, { useState , useEffect  } from 'react';
+import React from 'react';
+import useResource from '../hooks/useResource';
 
 function CreateForm(props) {
+    const {createResource , fetchResource} = useResource()
 
     function createCookies(e) {
         e.preventDefault();
@@ -13,6 +15,7 @@ function CreateForm(props) {
             hourly_sales: [48, 42, 30, 24, 42, 24, 36, 42, 42, 48, 36, 42, 24, 36, 516]
         }
         props.updateStand(result)
+        createResource(result)
 
 
     }
