@@ -82,7 +82,3 @@ export default function useResource() {
     }
 }
 
-/* STRETCH
-This approach works, but it's not very snappy for the user.
-Check the SWR docs to see if you can "optomistically" render updated state while the API response is pending.
-*/
